@@ -1,10 +1,6 @@
+import pandas as pd
+
 def load_csv(filepath: str) -> pd.DataFrame:
-    """
-    Load sensor data from a CSV file.
+    df = pd.read_csv(filepath)
+    return df
 
-    Args:
-        filepath (str): Path to the CSV file.
-
-    Returns:
-        pd.DataFrame: Loaded data as a pandas DataFrame.
-    """
