@@ -35,11 +35,11 @@ def main():
     
 
     # Print results
-    for line in evaluated_df['evaluation'].tolist():
+    for line in evaluated_df['result'].tolist():
         print(line)
 
     # Save results
-    evaluated_df['evaluation'].to_csv(output_path, index=False)
+    evaluated_df['result'].to_csv(output_path, index=False)
     print(f"Results saved to {output_path}")
 
 
